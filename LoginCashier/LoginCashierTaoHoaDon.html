@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Vũ Văn Nghĩa 20206205</title>
+    <link rel="icon" type="image/x-icon" href="./Resources/assets/img/VuVanNghia20206205.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #root {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #header .navbar-right a {
+            color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        #header .navbar-right a:hover {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <!-- -->
+        <nav id="header" class="bg-primary navbar navbar-expand-lg navbar-dark mb-4 fixed-top">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto ">
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="LoginCashier.html">
+                            <i class="fa-solid fa-at"></i>
+                            Tất cả sản phẩm
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="LoginCashierPhanLoaiTranh.html">
+                            <i class="fa-solid fa-palette"></i>
+                            Phân loại tranh
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="LoginCashierPhanLoaiTacGia.html">
+                            <i class="fa-solid fa-user"></i>
+                            Các tác giả
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="LoginCashierTimKiemTranh.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Tìm kiếm tranh
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="LoginCashierTaoHoaDon.html">
+                            <i class="fa-solid fa-plus"></i>
+                            Tạo hóa đơn bán
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="LoginCashierTuVan.html">
+                            <i class="fa-regular fa-comment"></i>
+                            Tư vấn khách hàng
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="LoginCashierThayDoiGiaBan.html">
+                            <i class="fa-solid fa-bolt"></i>
+                            Thay đổi giá bán
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- ============================================================== -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle user-action">
+                            <img width="30px" height="30px" alt="avatar"
+                                src="../Resources/assets/img/VuVanNghia20206205.jpg">
+                            <i class="text-white ">Tên nhân viên</i>
+                        </a>
+
+                        <ul class="dropdown-menu bg-primary ">
+                            <li>
+                                <a href="LoginCashierHoSo.html">
+                                    <i class="fa-solid fa-user"></i>
+                                    Hồ sơ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="LoginCashierThongBao.html">
+                                    <i class="fa-solid fa-bell"></i>
+                                    Thông báo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="LoginCashierDoiMatKhau.html">
+                                    <i class="fa-solid fa-gear"></i>
+                                    Đổi mật khẩu
+                                </a>
+                            </li>
+                            <hr style="border: 2px white solid; " class="m-0">
+                            <li>
+                                <a href="../AccountForm/AccountFormLogin.html">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- ============================================================== -->
+            </div>
+        </nav>
+        <!-- -->
+        <!-- =============================================================================== -->
+        <div class="container-fluid" style="margin-top:60px">
+
+
+            <h2> Hóa đơn bán hàng</h2>
+            <form>
+                <div class="form-group">
+                    <label for="customerName">Tên khách hàng:</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Nhập tên khách hàng">
+                </div>
+                <div class="form-group">
+                    <label for="productName">Sản phẩm:</label>
+                    <input type="text" class="form-control" id="productName" placeholder="Nhập tên sản phẩm">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Số lượng:</label>
+                    <input type="number" class="form-control" id="quantity" placeholder="Nhập số lượng">
+                </div>
+                <div class="form-group">
+                    <label for="total">Tổng cộng:</label>
+                    <input type="text" class="form-control" id="total" readonly>
+                </div>
+                <button type="submit" class="btn btn-primary">Xác nhận</button>
+            </form>
+
+        </div>
+        <!-- =============================================================================== -->
+    </div>
+    <!-- =============================================================================== -->
+    <footer>
+        <nav id="footer" class="bg-primary text-center">
+            <div class="bg-info text-light text-center py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Thông tin giới thiệu</h5>
+                            <p>
+                                Cửa hàng chúng tôi rất vui lòng chào đón quí khách.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Liên hệ</h5>
+                            <ul class="list-unstyled">
+                                <li>Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</li>
+                                <li>Email: nghiavu2k2abc@gmail.com</li>
+                                <li>Số điện thoại: 0397562283</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="nav-link" href="https://m.me/vuvannghia0405" target="_blank"
+                style="color:white;display:inline-block;">
+                Vũ Văn Nghĩa 20206205
+            </a>
+            <a class="nav-link" href="https://www.facebook.com/vuvannghia0405" target="_blank"
+                style="display:inline-block;">
+                <i class="fab fa-facebook-f" style="color:white;"></i>
+            </a>
+            <a class="nav-link" style="display:inline-block;" href="tel:0397562283" target="_blank">
+                <i class="fa-solid fa-phone" style="color:white;"></i>
+            </a>
+            <a class="nav-link" style="display:inline-block;" href="mailto:nghiavu2k2abc@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope" style="color:white;"></i>
+            </a>
+        </nav>
+    </footer>
+    <!-- =============================================================================== -->
+</body>
+
+</html>
